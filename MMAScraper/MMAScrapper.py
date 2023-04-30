@@ -16,10 +16,10 @@ class FightersStatsScraper:
         self.fighter_links = []
         self.session = requests.Session()
         # Create Chrome options
-        #chrome_options = Options()
+        chrome_options = Options()
         # Add headless option
-        #chrome_options.add_argument("--headless")
-        #self.driver = webdriver.Chrome()  # Use appropriate driver for your browser
+        chrome_options.add_argument("--headless")
+        self.driver = webdriver.Chrome()  # Use appropriate driver for your browser
 
     def scrape(self):
         self.driver.get(self.start_url)
