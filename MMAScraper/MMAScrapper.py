@@ -93,4 +93,5 @@ class FightersStatsScraper:
 
 if __name__ == "__main__":
     scraper = FightersStatsScraper()
+    #scraper.scrape()
     scraper.run()
